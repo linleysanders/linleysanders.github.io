@@ -1,0 +1,51 @@
+State Code,State_Region,Nation_State,Small Area Estimate,95% CI (Lower),95% CI (Upper),Type
+AL,Alabama,Alabama,6.82%,5.87%,7.92%,3
+AK,Alaska,Alaska,6.93%,6.02%,7.97%,3
+AZ,Arizona,Arizona,6.43%,5.51%,7.48%,3
+AR,Arkansas,Arkansas,7.98%,6.94%,9.17%,3
+CA,California,California,6.10%,5.61%,6.62%,3
+CO,Colorado,Colorado,7.50%,6.54%,8.58%,3
+CT,Connecticut,Connecticut,6.64%,5.69%,7.74%,3
+DE,Delaware,Delaware,6.62%,5.68%,7.70%,3
+DC,District of Columbia,District of Columbia,7.14%,6.27%,8.12%,3
+FL,Florida,Florida,5.98%,5.39%,6.64%,3
+GA,Georgia,Georgia,6.51%,5.72%,7.39%,3
+HI,Hawaii,Hawaii,5.36%,4.52%,6.36%,3
+ID,Idaho,Idaho,7.40%,6.46%,8.46%,3
+IL,Illinois,Illinois,5.84%,5.24%,6.50%,3
+IN,Indiana,Indiana,7.59%,6.60%,8.72%,3
+IA,Iowa,Iowa,6.72%,5.85%,7.72%,3
+KS,Kansas,Kansas,7.25%,6.30%,8.35%,3
+KE,Kentucky,Kentucky,7.40%,6.41%,8.54%,3
+LA,Louisiana,Louisiana,6.52%,5.58%,7.61%,3
+ME,Maine,Maine,7.45%,6.45%,8.60%,3
+MD,Maryland,Maryland,6.42%,5.59%,7.36%,3
+MA,Massachusetts,Massachusetts,7.49%,6.53%,8.57%,3
+MI,Michigan,Michigan,6.60%,5.97%,7.30%,3
+MN,Minnesota,Minnesota,7.28%,6.36%,8.32%,3
+MS,Mississippi,Mississippi,6.06%,5.22%,7.02%,3
+MO,Missouri,Missouri,6.97%,6.02%,8.07%,3
+MN,Montana,Montana,7.26%,6.29%,8.37%,3
+NE,Nebraska,Nebraska,7.00%,6.05%,8.09%,3
+NV,Nevada,Nevada,7.14%,6.08%,8.39%,3
+NH,New Hampshire,New Hampshire,8.59%,7.47%,9.86%,3
+NJ,New Jersey,New Jersey,6.49%,5.67%,7.41%,3
+NM,New Mexico,New Mexico,6.75%,5.80%,7.86%,3
+NY,New York,New York,6.53%,5.93%,7.20%,3
+NC,North Carolina,North Carolina,7.20%,6.37%,8.13%,3
+ND,North Dakota,North Dakota,6.50%,5.64%,7.48%,3
+OH,Ohio,Ohio,7.54%,6.81%,8.33%,3
+OK,Oklahoma,Oklahoma,7.04%,6.11%,8.11%,3
+OR,Oregon,Oregon,7.95%,6.95%,9.09%,3
+PE,Pennsylvania,Pennsylvania,6.78%,6.12%,7.49%,3
+RI,Rhode Island,Rhode Island,7.14%,6.19%,8.22%,3
+SC,South Carolina,South Carolina,6.53%,5.62%,7.57%,3
+TN,Tennessee,Tennessee,7.06%,6.12%,8.12%,3
+TX,Texas,Texas,5.53%,4.99%,6.12%,3
+UT,Utah,Utah,7.53%,6.62%,8.56%,3
+VT,Vermont,Vermont,7.99%,6.91%,9.23%,3
+VA,Virginia,Virginia,7.77%,6.88%,8.76%,3
+WA,Washington,Washington,7.82%,6.80%,8.98%,3
+WV,West Virginia,West Virginia,8.31%,7.15%,9.64%,3
+WI,Wisconsin,Wisconsin,6.66%,5.72%,7.74%,3
+WY,Wyoming,Wyoming,7.53%,6.55%,8.64%,3
