@@ -1,111 +1,144 @@
-<!DOCTYPE html>
-<!-- Welcome to the HTML for my Github portfolio website-->
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Linley Sanders Data Portfolio Website">
-      <meta name="keywords" content="{linley sanders, data, journalism, twitter, drake, github, newsweek, associated press, teen vogue}">
-      <meta name="author" content="Linley Sanders">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <meta name="description" content="Linley Sanders Data Portfolio Website">
+    <meta name="keywords" content="{linley sanders, data, journalism, twitter, drake, github, newsweek, associated press, teen vogue}">
+    <meta name="author" content="Linley Sanders">
 
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
+    <!-- Your CSS files -->
+    <link rel="stylesheet" href="style/app.css">
     
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-  </style>
-</head>
-<body>
-
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">Linley's Data Portfolio</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="https://linleysanders.github.io">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="https://twitter.com/LinleyAnn">Twitter</a></li>
-        <li><a href="#">Contact</a></li>
-    </div>
-  </div>
-</nav>
-
-<div class="jumbotron">
-  <div class="container text-center">
-    <h2>Linley Sanders' Data Portfolio</h2>    
-    <p></p>  
-    <p>I'm a student at Columbia University's Graduate School of Journalism in the Lede Program for data journalism. If you click around, you'll find a few projects I've been building to expand my knowledge of Python, R,  PostgreSQL, interactive graphics, web scraping, data cleaning, and basic statistical analysis. </p>
-    <p> By trade, I'm a journalist who decided coding could make me a better reporter. I've worked for <a href="https://linleysanders.journoportfolio.com/the-ap/">The Associated Press</a>, <a href= "https://www.newsweek.com/when-will-chip-funding-run-out-millions-children-health-care-777003">Newsweek</a>  and <a href="https://www.kansascity.com/news/local/community/joco-913/article572223/Grumpy-old-men-Not-here-where-the-coffee-is-hot-and-the-conversation-flows-freely.html">The Kansas City Star</a>. My passion for data-driven news and women's political interests carried me from Kansas to Iowa to New York City. I'm currently a contributing news reporter for <a href= "https://www.teenvogue.com/story/women-prove-metoo-isnt-just-happening-in-the-us>">TeenVogue.com</a>, where I've written over 160 articles to help women engage with daily news, politics, and health. 
-    </div>
-    </p>
-  </div>
-</div>
+    <!-- google fonts: Roboto Condensed(super-font) and Lora(sub-font) -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet"> 
   
-<!--  <h3>Some of my Work</h3><br> -->
+    <title>Linley's Portfolio</title>
+  </head>
+    
+  <body class="light-theme">
+    <div class="container"><!-- start of the main container-->
+        <div class="row justify-content-center"><!-- headline and intro -->
+            <div class="col-md-10 ">
+                <h1 class="headline super-font">Linley Sanders' Data Portfolio</h1>
+                <!-- put your twitter page here: -->
+                <a class="handle super-font" href="https://www.twitter.com/LinleyAnn">@LinleyAnn</a>
+            </div>
+        </div>
+        <div class="row justify-content-center"> <!-- this is the subhead for the stories -->
+            <div class="col-md-10">
+                <p class="section super-font">About Me</p>
+                <p class="body-text sub-font">
+    <p> I'm a student at Columbia University's Graduate School of Journalism in the Lede Program for data journalism. If you click around, you'll find a few projects I've been building to expand my knowledge of Python, R,  PostgreSQL, interactive graphics, web scraping, data cleaning, and basic statistical analysis. </p>
+    <p> By trade, I'm a journalist who decided coding could make me a better reporter. I've worked for <a href="https://linleysanders.journoportfolio.com/the-ap/">The Associated Press</a>, <a href= "https://www.newsweek.com/when-will-chip-funding-run-out-millions-children-health-care-777003">Newsweek</a>  and <a href="https://www.kansascity.com/news/local/community/joco-913/article572223/Grumpy-old-men-Not-here-where-the-coffee-is-hot-and-the-conversation-flows-freely.html">The Kansas City Star</a>. My passion for data-driven news and women's political interests carried me from Kansas to Iowa to New York City. I'm currently a contributing news reporter for <a href= "https://www.teenvogue.com/story/women-prove-metoo-isnt-just-happening-in-the-us>">TeenVogue.com</a>, where I've written over 160 articles to help women engage with daily news, politics, and health.                 </p>
+            </div>
+        </div>
+    </div><!-- container-->
+        
+        
+<div class="container"> 
+    
+        <div class="row justify-content-center"> <!-- this is the subhead for the stories -->
+            <div class="col-md-10">
+                <p class="section super-font">Stories</p>
+            </div>
+        </div>
+        
+<!-- start of story with an image -->
+        <!-- put the link here -->
+        <a class="link" href="http://ledeprogram.com" class="teaser-anchor">
+            <div class="row justify-content-center "> 
+                <div class="col-md-4"><!-- image -->
+                    <img class="image " src="style/images/example1.png" alt="image description">
+                </div>
+                <div class="col-md-6 "><!-- headline/description -->
+                    <p class="subhead super-font">Snappy description</p>
+                    <p class="body-text sub-font">This part can be the headline if it is a long one. </p>
+                </div>
+            </div>
+    </a>
+<!-- end of story with an image -->
 
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br><br>
+    
+    
+<!-- start of story with an image -->
+        <!-- put the link here -->
+        <a class="link" href="http://ledeprogram.com" class="teaser-anchor">
+            <div class="row justify-content-center "> 
+                <div class="col-md-4"><!-- image -->
+                    <img class="image " src="style/images/example2.png" alt="image description">
+                </div>
+                <div class="col-md-6 "><!-- headline/description -->
+                    <p class="subhead super-font">Snappy description</p>
+                    <p class="body-text sub-font">This part can be the headline if it is a long one. </p>
+                </div>
+            </div>
+    </a>
+<!-- end of story with an image -->
 
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Some text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br><br>
+<!-- start of story with an image -->
+        <!-- put the link here -->
+        <a class="link" href="http://ledeprogram.com" class="teaser-anchor">
+            <div class="row justify-content-center "> 
+                <div class="col-md-4"><!-- image -->
+                    <img class="image " src="style/images/example3.png" alt="image description">
+                </div>
+                <div class="col-md-6 "><!-- headline/description -->
+                    <p class="subhead super-font">Snappy description</p>
+                    <p class="body-text sub-font">This part can be the headline if it is a long one. </p>
+                </div>
+            </div>
+    </a>
+<!-- end of story with an image -->
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
+    
+    <!-- start of story with an image -->
+        <!-- put the link here -->
+        <a class="link" href="http://ledeprogram.com" class="teaser-anchor">
+            <div class="row justify-content-center "> 
+                <div class="col-md-4"><!-- image -->
+                    <img class="image " src="style/images/example4.png" alt="image description">
+                </div>
+                <div class="col-md-6 "><!-- headline/description -->
+                    <p class="subhead super-font">Snappy description</p>
+                    <p class="body-text sub-font">This part can be the headline if it is a long one. </p>
+                </div>
+            </div>
+    </a>
+<!-- end of story with an image -->
+</div><!-- end of container with stories-->
+      
+      
+<div class="container">            
+        <div class="row justify-content-center"> <!-- this is the subhead for the stories -->
+            <div class="col-md-10">
+                <p class="footer sub-font">
+                You can add copyright or some other stuff here if you like
+                </p>
+            </div>
+        </div>
+    </div><!-- container-->
+            
+    
+        
+        
+        
+        
+        
+      <!-- end of the main container-->
+   
+        
 
-</body>
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
 </html>
