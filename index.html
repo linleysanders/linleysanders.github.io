@@ -1,166 +1,65 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <meta name="description" content="Linley Sanders Data Portfolio Website">
-    <meta name="keywords" content="{linley sanders, data, journalism, twitter, drake, github, newsweek, associated press, teen vogue, propublica}">
-    <meta name="author" content="Linley Sanders">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Your CSS files -->
-    <link rel="stylesheet" href="style/app.css">
-    
-    <!-- google fonts: Roboto Condensed(super-font) and Lora(sub-font) -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet"> 
-  
-    <title>Linley's Data Portfolio</title>
+{% seo %}
+    <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
   </head>
-    
-  <body class="light-theme">
-    <div class="container"><!-- start of the main container-->
-        <div class="row justify-content-center"><!-- headline and intro -->
-            <div class="col-md-10 ">
-                <h1 class="headline super-font">Linley Sanders' Data Portfolio</h1>
-                <!-- put your twitter page here: -->
-                <a class="handle super-font" href="mailto:linleysanders1@gmail.com?Subject=Hello,%20Linley"
-                >linleyasanders@gmail.com  |  </a>
-                <a class="handle super-font" href="https://www.twitter.com/LinleyAnn">Twitter: @LinleyAnn</a>
-            </div>
-        </div>
-
-        <div class="row justify-content-center"> <!-- this is the subhead for the stories -->
-            <div class="col-md-10">
-            <p class="section super-font">About Me</p>
-            <p class="body-text sub-font"> I'm a graduate from Columbia University's Graduate School of Journalism in the Lede Program for data journalism. If you click around, you'll find a published data visualization articles and in-the-works projects I've built to expand my knowledge of Python, R, PostgreSQL, interactive graphics, web scraping, data cleaning, and basic statistical analysis. By trade, I'm a journalist who decided coding could make me a better reporter. I've worked for <a href="https://www.propublica.org/article/missouri-counties-face-uphill-climb-to-prepare-for-high-stakes-midterm">ProPublica's Electionland</a>, <a href="https://linleysanders.journoportfolio.com/the-ap/">The Associated Press</a>, <a href= "https://www.newsweek.com/when-will-chip-funding-run-out-millions-children-health-care-777003">Newsweek</a>  and <a href="https://www.kansascity.com/news/local/community/joco-913/article572223/Grumpy-old-men-Not-here-where-the-coffee-is-hot-and-the-conversation-flows-freely.html">The Kansas City Star</a>. My passion for data-driven news and women's political interests carried me from Kansas to Iowa to New York City. I'm currently a contributing news reporter for <a href= "https://www.teenvogue.com/story/women-prove-metoo-isnt-just-happening-in-the-us>">TeenVogue.com</a>, where I've written over 175 articles to help women engage with daily news, politics, and health.
-        </div>
-      </div>
-    </div><!-- container-->
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
-        
-<div class="container"> 
-    
-        <div class="row justify-content-center"> <!-- this is the subhead for the stories -->
-            <div class="col-md-10">
-                <p class="section super-font">Stories and Projects:</p>
-            </div>
-        </div>
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
 
-<!-- START MEASURING RECORD BREAKING PRESIDENTIAL LIFESPANS GEORGE HW BUSH -->
-        <!-- put the link here -->
-        <a class="link" href="https://medium.com/@linleysanders/measuring-the-record-breaking-presidential-lifespans-of-george-h-w-bush-and-jimmy-carter-f4a9ef9c3e7e" class="teaser-anchor"> 
-            <div class="row justify-content-center "> 
-                <div class="col-md-4"> <!-- image -->
-                    <img class="image" src="/style/images/presidents-2.png" alt="image description">
-                </div>
-                <div class="col-md-6 "><!-- headline/description -->
-                   <p class="subhead super-font">Measuring the Record-Breaking Presidential Lifespans of George H.W. Bush and Jimmy Carter</p>
-                    <p class="body-text sub-font">A Python analysis of U.S. presidential ages on the day of George H.W. Bush's funeral.</p>
-                </div>
-            </div>
-  </a>
-<!-- END MEASURING RECORD BREAKING PRESIDENTIAL LIFESPANS GEORGE HW BUSH -->
-        
-<!-- START YEAR OF THE WOMAN? FEMALE CANDIDATES COULD WIN BIG IN 2018, BUT WE'RE STILL FAR FROM PARITY -->
-        <!-- put the link here -->
-        <a class="link" href="https://www.newsweek.com/women-now-hold-historic-number-state-legislature-seats-were-still-more-100-803742" class="teaser-anchor">
-            <div class="row justify-content-center "> 
-                <div class="col-md-4"><!-- image -->
-                    <img class="image " src="style/images/gender-parity-bkg.png" alt="image description">
-                </div>
-                <div class="col-md-6 "><!-- headline/description -->
-                    <p class="subhead super-font">Female Candidates Could Win Big in 2018, But We're Still Far From Parity</p>
-                    <p class="body-text sub-font">An R analysis of gender parity in America’s statehouses ahead of the 2018 Midterms alongside a time-series map. </p>
-                </div>
-            </div>
-    </a>
-<!-- END START YEAR OF THE WOMAN? FEMALE CANDIDATES COULD WIN BIG IN 2018, BUT WE'RE STILL FAR FROM PARITY -->
+        <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-    
-<!-- START WHAT WILL YOU MAKE PER HOUR IN 2018? THESE STATES ARE RAISING THE MINIMUM WAGE IN JANUARY -->
-        <!-- put the link here -->
-        <a class="link" href="https://www.newsweek.com/what-minimum-wage-these-states-are-raising-it-2018-724430" class="teaser-anchor">
-            <div class="row justify-content-center "> 
-                <div class="col-md-4"><!-- image -->
-                    <img class="image " src="style/images/minimum-wage.png" alt="image description">
-                </div>
-                <div class="col-md-6 "><!-- headline/description -->
-                    <p class="subhead super-font">What Will You Make Per Hour in 2018?</p>
-                    <p class="body-text sub-font">In this article on 2018 minimum wages, I followed Antwan Williams, a 29-year-old who helped illustrate the impact of stagnant minimum wages across America. </p>
-                </div>
-            </div>
-    </a>
-<!-- END START WHAT WILL YOU MAKE PER HOUR IN 2018? THESE STATES ARE RAISING THE MINIMUM WAGE IN JANUARY -->
+        {% if site.github.is_project_page %}
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        {% endif %}
 
-<!-- START MARIJUANA LEGALIZATION 2018: WHICH STATES MIGHT CONSIDER CANNABIS LAWS THIS YEAR? -->
-        <!-- put the link here -->
-        <a class="link" href="https://www.newsweek.com/marijuana-legalization-2018-which-states-will-consider-cannabis-laws-year-755282" class="teaser-anchor">
-            <div class="row justify-content-center "> 
-                <div class="col-md-4"><!-- image -->
-                    <img class="image " src="style/images/marijuana.png" alt="image description">
-                </div>
-                <div class="col-md-6 "><!-- headline/description -->
-                    <p class="subhead super-font">Which States Might Consider Marijuana Legalization in 2018</p>
-                    <p class="body-text sub-font">Created a dual-axis map that showed marijuana legalization across the U.S. with potential for legislative movement during 2018 sessions. </p>
-                </div>
-            </div>
-    </a>
-<!-- END START MARIJUANA LEGALIZATION 2018: WHICH STATES MIGHT CONSIDER CANNABIS LAWS THIS YEAR? -->
+        {% if site.github.is_user_page %}
+        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+        {% endif %}
 
-<!-- START NYC SCHOOLS FLASK DATABASE -->
-        <a class="link" href="https://linleysanders.github.io/nycschoolsearch/" class="teaser-anchor">
-            <div class="row justify-content-center "> 
-                <div class="col-md-4"><!-- image -->
-                    <img class="image " src="style/images/nycschools.png" alt="image description">
-                </div>
-                <div class="col-md-6 "><!-- headline/description -->
-                    <p class="subhead super-font">Database-Driven Web Application with Frozen Flask</p>
-                    <p class="body-text sub-font">Built a web application with SQLite to pull information from a database of NYC schools during Columbia University's Lede Program. </p>
-                </div>
-            </div>
-    </a>
-<!-- END NYC SCHOOLS FLASK DATABASE -->
-    
-<!-- START TEEN VOGUE FRONT PAGE WEB SCRAPER -->
-        <a class="link" href="https://github.com/linleysanders/projects/blob/master/Teen%20Vogue%20Front%20Page%20Headline%20Web%20Scraper.ipynb" class="teaser-anchor">
-            <div class="row justify-content-center "> 
-                <div class="col-md-4"><!-- image -->
-                    <img class="image " src="style/images/teen-vogue-size.png" alt="image description">
-                </div>
-                <div class="col-md-6 "><!-- headline/description -->
-                    <p class="subhead super-font">Web Scraping With Beautiful Soup</p>
-                    <p class="body-text sub-font">Used the Python library Beautiful Soup to build a parser that pulls front page Teen Vogue headlines into a dataframe. </p>
-                </div>
-            </div>
-    </a>
-<!-- END TEEN VOGUE FRONT PAGE WEB SCRAPER -->
+        {% if site.show_downloads %}
+        <ul class="downloads">
+          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+        </ul>
+        {% endif %}
+      </header>
+      <section>
 
+      {{ content }}
 
-</div><!-- end of container with stories-->
-      
-      
-<!-- <div class="container">            
-        <div class="row justify-content-center"> <!-- this is the subhead for the stories -->
-            <!--<div class="col-md-10">
-             <p class="footer sub-font">
-                You can add copyright or some other stuff here if you like
-                </p>-->
-            </div>
-        </div>
-    </div> <!-- container-->
-            
-   
-      <!-- end of the main container-->
-   
-      
-      
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      </section>
+      <footer>
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% if site.google_analytics %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', '{{ site.google_analytics }}', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}
   </body>
 </html>
